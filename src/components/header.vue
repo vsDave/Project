@@ -20,6 +20,11 @@
             >Services
           </router-link>
         </li>
+        <li class="inline-block mx-10 my-5 underline">
+          <router-link to="/tables" class="rounded-md hover:bg-gray-800" exact
+            >Tables
+          </router-link>
+        </li>
       </ul>
     </nav>
   </div>

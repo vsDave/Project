@@ -9,11 +9,12 @@
       </h1>
 
       <div
-        @click="add(item)"
-        :style="item.isActive ? styleObject : styleObject2"
-        class="flex flex-row justify-around p-6 mx-10 my-5 text-3xl text-center text-white bg-green-600 cursor-pointer "
-        :key="index"
         v-for="(item, index) in items"
+        :key="index"
+        :class="`flex flex-row justify-around p-6 mx-10 my-5 text-3xl text-center text-white  cursor-pointer ${
+          item.isActive ? ' bg-purple-700 ' : ' bg-pink-500'
+        }`"
+        @click="add(item)"
       >
         <h1>{{ item.title }}</h1>
         <p>${{ item.amount }}.00</p>
@@ -72,12 +73,7 @@ export default {
   data() {
     return {
       total: 0,
-      styleObject: {
-        background: 'purple',
-      },
-      styleObject2: {
-        background: '#059669',
-      },
+
       items: [
         {
           id: 1,

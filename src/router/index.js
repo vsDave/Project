@@ -6,6 +6,7 @@ import calculator from '../components/calculator.vue'
 
 import Todo from '../components/todo.vue'
 import services from '../components/services.vue'
+import tables from '../components/tables.vue'
 
 Vue.use(VueRouter)
 
@@ -36,6 +37,10 @@ const routes = [
   {
     path: '/services',
     component: services,
+  },
+  {
+    path: '/tables',
+    component: tables,
   },
 ]
 
