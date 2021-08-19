@@ -7,7 +7,7 @@ import calculator from '../components/calculator.vue'
 import Todo from '../components/todo.vue'
 import services from '../components/services.vue'
 import tables from '../components/tables.vue'
-
+import quiz from '../components/quiz.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -41,6 +41,10 @@ const routes = [
   {
     path: '/tables',
     component: tables,
+  },
+  {
+    path: '/quiz',
+    component: quiz,
   },
 ]
 

@@ -25,6 +25,11 @@
             >Tables
           </router-link>
         </li>
+        <li class="inline-block mx-10 my-5 underline">
+          <router-link to="/quiz" class="rounded-md hover:bg-gray-800" exact
+            >quiz
+          </router-link>
+        </li>
       </ul>
     </nav>
   </div>
